@@ -11,6 +11,7 @@ app.use(express.json()); // To parse the stream and get the body
 
 //creating the http client---using Thunderclient
 app.use("/api/contacts",require("./routes/contactRoutes"));//app.use == middleware
+app.use("/api/users",require("./routes/userRoutes"));
 
 app.use(erroHandler);
 
